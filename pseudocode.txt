@@ -1,0 +1,13 @@
+create a homepage
+    create a div for buttons
+    create a div for gifs to showup 
+    search bar
+    submit button 
+        attach an onclick method
+
+call the API with  AJAX.
+dynamically create new buttons
+    -for the giphy rating too
+limit the giphy call to 10 images per search
+pull the static image first, then click on it to animate, and then click again to pause
+
