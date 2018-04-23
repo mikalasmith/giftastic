@@ -42,21 +42,20 @@
         var results = response.data;
         for (var i=0; i<results.length; i++){
 
-            var animalDiv = $("<div class='newGiphy'>");
+            
+           
      
             var rating = results[i].rating;
+            var static = results[i].images.fixed_height_still.url;
+            var animate = results[i].images.fixed_height.url;
+
+            var animalDiv = $("<div>");
 
             var p = $("<p>").text("Rating: " + rating);
 
             var image = $("<img>").attr("src", static);
             image.addClass("image");
-
-            var animate = results[i].images.fixed_height.url;
-
-            var static = results[i].images.fixed_height_still.url;
-
             image.attr("data-state", "still")
-
             image.attr("data-still", static);
             image.attr("data-animate", animate);
             
